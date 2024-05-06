@@ -87,6 +87,38 @@
     <ul id="skills"></ul>
   </div>
 </section><!-- End Dare -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  const roles = {
+    "Data Scientist": ["Python", "R", "Statistical Analysis"],
+    "Data Analyst": ["Excel", "SQL", "Tableau"],
+    "Machine Learning Engineer": ["TensorFlow", "Scikit-Learn", "Keras"],
+    "Researcher": ["Academic Writing", "Experiment Design", "Data Collection"],
+    "Software Developer": ["Java", "Git", "Agile Methodologies"],
+    "Freelancer": ["Project Management", "Client Communication", "Time Management"]
+  };
+
+  const typed = new Typed('#role', {
+    strings: Object.keys(roles),
+    typeSpeed: 50,
+    backSpeed: 50,
+    smartBackspace: true,
+    loop: true,
+    preStringTyped: function(pos, self) {
+      updateSkills(self.strings[pos]);
+    }
+  });
+
+  function updateSkills(role) {
+    const skillsList = document.getElementById("skills");
+    skillsList.innerHTML = ""; // Clear previous skills
+    roles[role].forEach(skill => {
+      const li = document.createElement("li");
+      li.textContent = skill;
+      skillsList.appendChild(li);
+    });
+  }
+</script>
 
   <main id="main">
 
