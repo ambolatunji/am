@@ -87,43 +87,6 @@
     <ul id="skills"></ul>
   </div>
 </section><!-- End Dare -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  const roles = {
-    "Data Scientist": ["Python", "R", "Statistical Analysis"],
-    "Data Analyst": ["Excel", "SQL", "Tableau"],
-    "Machine Learning Engineer": ["TensorFlow", "Scikit-Learn", "Keras"],
-    "Researcher": ["Academic Writing", "Experiment Design", "Data Collection"],
-    "Software Developer": ["Java", "Git", "Agile Methodologies"],
-    "Freelancer": ["Project Management", "Client Communication", "Time Management"]
-  };
-
-  const typed = new Typed('#role', {
-    strings: Object.keys(roles),
-    typeSpeed: 50,
-    backSpeed: 50,
-    smartBackspace: true,
-    loop: true
-  });
-
-  function updateSkills(role) {
-    const skillsList = document.getElementById("skills");
-    skillsList.innerHTML = ""; // Clear previous skills
-    roles[role].forEach(skill => {
-      const li = document.createElement("li");
-      li.textContent = skill;
-      skillsList.appendChild(li);
-    });
-  }
-
-  // Update skills initially
-  updateSkills(typed.strings[0]);
-
-  // Update skills when the role changes
-  typed.on('beforeStringRendered', (arrayPos, self) => {
-    updateSkills(self.strings[arrayPos]);
-  });
-</script>
 
   <main id="main">
 
@@ -917,6 +880,43 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+  const roles = {
+    "Data Scientist": ["Python", "R", "Statistical Analysis"],
+    "Data Analyst": ["Excel", "SQL", "Tableau"],
+    "Machine Learning Engineer": ["TensorFlow", "Scikit-Learn", "Keras"],
+    "Researcher": ["Academic Writing", "Experiment Design", "Data Collection"],
+    "Software Developer": ["Java", "Git", "Agile Methodologies"],
+    "Freelancer": ["Project Management", "Client Communication", "Time Management"]
+  };
+
+  const typed = new Typed('#role', {
+    strings: Object.keys(roles),
+    typeSpeed: 50,
+    backSpeed: 50,
+    smartBackspace: true,
+    loop: true
+  });
+
+  function updateSkills(role) {
+    const skillsList = document.getElementById("skills");
+    skillsList.innerHTML = ""; // Clear previous skills
+    roles[role].forEach(skill => {
+      const li = document.createElement("li");
+      li.textContent = skill;
+      skillsList.appendChild(li);
+    });
+  }
+
+  // Update skills initially
+  updateSkills(typed.strings[0]);
+
+  // Update skills when the role changes
+  typed.on('beforeStringRendered', (arrayPos, self) => {
+    updateSkills(self.strings[arrayPos]);
+  });
+</script>
 
 </body>
 
