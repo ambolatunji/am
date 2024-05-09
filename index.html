@@ -103,10 +103,7 @@
     typeSpeed: 50,
     backSpeed: 50,
     smartBackspace: true,
-    loop: true,
-    preStringTyped: function(pos, self) {
-      updateSkills(self.strings[pos]);
-    }
+    loop: true
   });
 
   function updateSkills(role) {
@@ -118,6 +115,14 @@
       skillsList.appendChild(li);
     });
   }
+
+  // Update skills initially
+  updateSkills(typed.strings[0]);
+
+  // Update skills when the role changes
+  typed.on('beforeStringRendered', (arrayPos, self) => {
+    updateSkills(self.strings[arrayPos]);
+  });
 </script>
 
   <main id="main">
