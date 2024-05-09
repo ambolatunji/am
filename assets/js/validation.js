@@ -13,16 +13,6 @@
   }, false);
 })();
 
-function updateSkills(role) {
-    const skillsList = document.getElementById("skills");
-    skillsList.innerHTML = ""; // Clear previous skills
-    roles[role].forEach(skill => {
-      const li = document.createElement("li");
-      li.textContent = skill;
-      skillsList.appendChild(li);
-    });
-  }
-
 function setValidationResponse() {
 	var emailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	
