@@ -32,19 +32,6 @@
       }
     }
   }
-/**
-   * span role listener 
-   */
-  const typed = new Typed('#role', {
-    strings: Object.keys(roles),
-    typeSpeed: 50,
-    backSpeed: 50,
-    smartBackspace: true,
-    loop: true,
-    preStringTyped: function(pos, self) {
-      updateSkills(self.strings[pos]);
-    }
-  });
   /**
    * Easy on scroll event listener 
    */
