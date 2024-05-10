@@ -475,8 +475,19 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
+              <h4>Meter Data Analysis/ AMI/ SA</h4>
+              <h5>2021 - Present</h5>
+              <p><em>Eko Electricity Distribution Company</em></p>
+              <ul>
+                <li>Conducted data analysis on over 800,000 customer records using SQL, Excel, and Power BI to produce key insights and KPIs, enabling the business to make data-driven decisions to maximize revenue and minimize technical and collection losses</li>
+                  <li>Resolved business software-related complaints, resulting in improved deliverables from sales representatives and enhanced customer satisfaction</li>
+                  <li>Achieved 70% workflow automation within the department using Power Automation in Microsoft, resulting in improved efficiency and productivity</li>
+                  <li>Achieved a remarkable 10% reduction in ATC&C (Aggregate Technical, Commercial and Collection) losses within the first year through in-depth analysis of AMR (Automated Meter Reading) meter data leading to a significant revenue increase from 3 billion to 5.4 billion Naira</li>
+              </ul>
+                      </div>
+            <div class="resume-item">
               <h4>Device Programmer</h4>
-              <h5>2019 - Present</h5>
+              <h5>2019-2021</h5>
               <p><em>Eko Electricity Distribution Company</em></p>
               <ul>
                 <li>Acquisition of smart meters on the AMI (Advanced Metering Infrastructure) and the AMR (Automatic Meter Reading) for remote monitoring</li>
@@ -490,16 +501,6 @@
                   <li>Allocation of smart meters for installation </li>
               </ul>
             </div>
-            <div class="resume-item">
-              <h4>Computer Science Instructor</h4>
-              <h5>2018 - 2019</h5>
-              <p><em>National Youth Service Corps</em></p>
-              <ul>
-                <li>Tutored high schoolers computer studies</li>
-                <li>Encouraged positive behaviour among students</li>
-                <li>Led a group of students to win the local spelling bee competition</li>
-                <li>Tutored my fellow Corp member basics in computer programming and were certified</li>
-              </ul>
             </div>
 
             <div class="resume-item">
@@ -532,7 +533,7 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>This is the collection of Projects done overtime.</p>
+          <p>This is the collection of Projects done over time.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -877,37 +878,38 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
   <script>
-  const roles = {
-    "Data Scientist": ["Python", "R", "Statistical Analysis"],
-    "Data Analyst": ["Excel", "SQL", "Tableau"],
-    "Machine Learning Engineer": ["TensorFlow", "Scikit-Learn", "Keras"],
-    "Researcher": ["Academic Writing", "Experiment Design", "Data Collection"],
-    "Software Developer": ["Java", "Git", "Agile Methodologies"],
-    "Freelancer": ["Project Management", "Client Communication", "Time Management"]
-  };
-
-  const typed = new Typed('#role', {
-    strings: Object.keys(roles),
-    typeSpeed: 50,
-    backSpeed: 50,
-    smartBackspace: true,
-    loop: true
-  });
-
-  function updateSkills(role) {
-    const skillsList = document.getElementById("skills");
-    skillsList.innerHTML = ""; // Clear previous skills
-    roles[role].forEach(skill => {
-      const li = document.createElement("li");
-      li.textContent = skill;
-      skillsList.appendChild(li);
+    const roles = {
+      "Data Scientist": ["Python", "R", "Statistical Analysis"],
+      "Data Analyst": ["Excel", "SQL", "Tableau"],
+      "Machine Learning Engineer": ["TensorFlow", "Scikit-Learn", "Keras"],
+      "Researcher": ["Academic Writing", "Experiment Design", "Data Collection"],
+      "Software Developer": ["Java", "Git", "Agile Methodologies"],
+      "Freelancer": ["Project Management", "Client Communication", "Time Management"]
+    };
+    const typed = new Typed('#role', {
+      strings: Object.keys(roles),
+      typeSpeed: 50,
+      backSpeed: 50,
+      smartBackspace: true,
+      loop: true
     });
-  }
+    
+    function updateSkills(role) {
+      const skillsList = document.getElementById("skills");
+      skillsList.innerHTML = ""; // Clear previous skills
+      roles[role].forEach(skill => {
+        const li = document.createElement("li");
+        li.textContent = skill;
+        skillsList.appendChild(li);
+      });
+    }
 
   // Update skills initially
   updateSkills(typed.strings[0]);
