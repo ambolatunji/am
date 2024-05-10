@@ -52,7 +52,7 @@
           <a href="https://www.facebook.com/amb.olatunji" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://instagram.com/amb_olatunji" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="https://github.com/ambolatunji/" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:dareartabefe@gmail.com" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <!--<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>--->
           <a href="https://www.linkedin.com/in/amb-olatunji/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           <a href="https://www.kaggle.com/ambolatunji/" class="kaggle"><i class="bx bxl-kaggle"></i></a>
         </div>
@@ -72,21 +72,12 @@
   </header><!-- End Header -->
 
   <!-- ======= Dare Section ======= -->
-  <!--<section id="dare" class="d-flex flex-column justify-content-center align-items-center">
+  <section id="dare" class="d-flex flex-column justify-content-center align-items-center">
     <div class="dare-container" data-aos="fade-in">
       <h1>Dare Israila Olatunji</h1>
-      <p>I am a <span class="typed" data-typed-items="Data Scientist, Data Analyst, Machine Learning Engineer, Researcher, Software Developer, Freelancer"></span></p>
-      
-    </div>->
+      <p>I am a <span class="typed" data-typed-items="Data Scientist, Machine Learning Engineer, Data Analyst, Researcher, Software Developer, Freelancer"></span></p>
+    </div>
   </section><!-- End Dare -->
-  <!-- ======= Dare Section ======= -->
-<section id="dare" class="d-flex flex-column justify-content-center align-items-center">
-  <div class="dare-container" data-aos="fade-in">
-    <h1>Dare Israila Olatunji</h1>
-    <p>I am a <span id="role" class="typed"></span></p>
-    <ul id="skills"></ul>
-  </div>
-</section><!-- End Dare -->
 
   <main id="main">
 
@@ -475,19 +466,8 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Meter Data Analysis/ AMI/ SA</h4>
-              <h5>2021 - Present</h5>
-              <p><em>Eko Electricity Distribution Company</em></p>
-              <ul>
-                <li>Conducted data analysis on over 800,000 customer records using SQL, Excel, and Power BI to produce key insights and KPIs, enabling the business to make data-driven decisions to maximize revenue and minimize technical and collection losses</li>
-                  <li>Resolved business software-related complaints, resulting in improved deliverables from sales representatives and enhanced customer satisfaction</li>
-                  <li>Achieved 70% workflow automation within the department using Power Automation in Microsoft, resulting in improved efficiency and productivity</li>
-                  <li>Achieved a remarkable 10% reduction in ATC&C (Aggregate Technical, Commercial and Collection) losses within the first year through in-depth analysis of AMR (Automated Meter Reading) meter data leading to a significant revenue increase from 3 billion to 5.4 billion Naira</li>
-              </ul>
-                      </div>
-            <div class="resume-item">
               <h4>Device Programmer</h4>
-              <h5>2019-2021</h5>
+              <h5>2019 - Present</h5>
               <p><em>Eko Electricity Distribution Company</em></p>
               <ul>
                 <li>Acquisition of smart meters on the AMI (Advanced Metering Infrastructure) and the AMR (Automatic Meter Reading) for remote monitoring</li>
@@ -501,6 +481,16 @@
                   <li>Allocation of smart meters for installation </li>
               </ul>
             </div>
+            <div class="resume-item">
+              <h4>Computer Science Instructor</h4>
+              <h5>2018 - 2019</h5>
+              <p><em>National Youth Service Corps</em></p>
+              <ul>
+                <li>Tutored high schoolers computer studies</li>
+                <li>Encouraged positive behaviour among students</li>
+                <li>Led a group of students to win the local spelling bee competition</li>
+                <li>Tutored my fellow Corp member basics in computer programming and were certified</li>
+              </ul>
             </div>
 
             <div class="resume-item">
@@ -533,7 +523,7 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>This is the collection of Projects done over time.</p>
+          <p>This is the collection of Projects done overtime.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -878,47 +868,9 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
-  <script>
-    const roles = {
-      "Data Scientist": ["Python", "R", "Statistical Analysis"],
-      "Data Analyst": ["Excel", "SQL", "Tableau"],
-      "Machine Learning Engineer": ["TensorFlow", "Scikit-Learn", "Keras"],
-      "Researcher": ["Academic Writing", "Experiment Design", "Data Collection"],
-      "Software Developer": ["Java", "Git", "Agile Methodologies"],
-      "Freelancer": ["Project Management", "Client Communication", "Time Management"]
-    };
-    const typed = new Typed('#role', {
-      strings: Object.keys(roles),
-      typeSpeed: 50,
-      backSpeed: 50,
-      smartBackspace: true,
-      loop: true
-    });
-    
-    function updateSkills(role) {
-      const skillsList = document.getElementById("skills");
-      skillsList.innerHTML = ""; // Clear previous skills
-      roles[role].forEach(skill => {
-        const li = document.createElement("li");
-        li.textContent = skill;
-        skillsList.appendChild(li);
-      });
-    }
-
-  // Update skills initially
-  updateSkills(typed.strings[0]);
-
-  // Update skills when the role changes
-  typed.on('beforeStringRendered', (arrayPos, self) => {
-    updateSkills(self.strings[arrayPos]);
-  });
-</script>
 
 </body>
 
