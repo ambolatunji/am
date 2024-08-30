@@ -31,6 +31,8 @@ h1, h2, h3, h4, h5, h6 {
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
+  background: linear-gradient(45deg, #149ddd, #37b3ed);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -56,6 +58,23 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
   opacity: 1;
 }
+
+/* Add a fade-in animation for section content */
+.section-title {
+  animation: fadeInUp 1s ease-in-out both;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -542,6 +561,28 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+.portfolio-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.portfolio-details .portfolio-info, .portfolio-details .portfolio-description {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 300px;
+}
+
+.portfolio-details-slider {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure images within the slider are responsive */
+.portfolio-details-slider img {
+  width: 100%;
+  height: auto;
+}
+
 .portfolio-details/portfolio-details {
   padding-top: 40px;
 }

@@ -53,6 +53,9 @@ function markAsValid(id) {
 }
 
 function markAsInvalid(id, feedback) {
-	document.getElementById(id+"-info").style.display = "inline";
-	document.getElementById(id+"-info").innerText = feedback;
+    let feedbackElement = document.getElementById(id + "-info");
+    feedbackElement.style.display = "inline";
+    feedbackElement.innerText = feedback;
+    feedbackElement.classList.add('text-danger');
 }
+

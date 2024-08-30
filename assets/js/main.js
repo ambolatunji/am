@@ -114,6 +114,16 @@
     }
   }, true)
 
+  document.querySelectorAll('.nav-menu a, .scrollto').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
   /**
    * Scroll with ofset on page load with hash links in the url
    */
@@ -144,7 +154,16 @@
   /**
    * Skills animation
    */
-  let skilsContent = select('.skills-content');
+  let skillsSection = document.querySelector('.skills-content');
+window.addEventListener('scroll', () => {
+    if (window.scrollY + window.innerHeight >= skillsSection.offsetTop) {
+        let progressBars = document.querySelectorAll('.progress-bar');
+        progressBars.forEach(bar => {
+            bar.style.width = bar.getAttribute('aria-valuenow') + '%';
+        });
+    }
+});
+  /**let skilsContent = select('.skills-content');
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
@@ -156,7 +175,7 @@
         });
       }
     })
-  }
+  }*/
 
   /**
    * Porfolio isotope and filter
