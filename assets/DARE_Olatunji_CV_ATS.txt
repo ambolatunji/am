@@ -73,13 +73,9 @@ Apr 2016 - Sep 2016
 KEY PROJECTS
 ================================================================================
 
-Sustainability Data Analysis Agent (2025 - Public)
-Python | AI Agent | ESG Analytics
-- AI agent for automated sustainability data analysis — ESG metrics, carbon footprinting, and environmental reporting.
-
-Agentic Data Analysis (2025 - Public)
-Python | AI Agent | Sustainability Dataset
-- Agentic AI pipeline for sustainability dataset analysis — automated insight generation and reporting.
+ESG-Assistant — AI Sustainability Research Assistant (2025 - Private)
+Python | AI Agent | ESG / Sustainability
+- AI-powered ESG research assistant for environmental, social & governance analysis — carbon footprinting, sustainability metrics, and automated reporting.
 
 Guinness-MCP — Semantic BI / NLP Server (2026 - Private)
 Python | Tolaram Group
