@@ -150,7 +150,7 @@
               <a href="#contact" class="btn-hero-primary">&#x2709;&#xFE0F; Hire Me</a>
               <a href="cv.html" target="_blank" class="btn-view-cv">&#x1F4C4; View Full CV</a>
               <a href="assets/DARE_Olatunji_CV.pdf" download class="btn-download-cv">&#x2B07;&#xFE0F; Download PDF</a>
-              <a href="assets/DARE_Olatunji_CV_ATS.txt" download class="btn-download-cv" title="ATS-friendly plain text version for applicant tracking systems">&#x1F4C3; Download ATS CV</a>
+              <a href="cv-ats.html" target="_blank" class="btn-download-cv" title="ATS-friendly CV — save as PDF from browser">&#x1F4C3; ATS-Friendly CV</a>
             </div>
           </div>
 
@@ -465,7 +465,7 @@
           <a href="https://github.com/ambolatunji" target="_blank" rel="noopener" class="github-profile-link">
             <i class="bi bi-github"></i> @ambolatunji
           </a>
-          <span class="repo-count-badge">54 repositories &middot; 19 featured below</span>
+          <span class="repo-count-badge">54 repositories &middot; 5 featured below</span>
         </div>
 
         <div class="repo-filter-tabs" data-aos="fade-up">
@@ -960,7 +960,7 @@
                 <a href="assets/DARE_Olatunji_CV.pdf" download class="btn-download-cv">
                   <i class="bi bi-file-earmark-arrow-down me-2"></i>Download PDF
                 </a>
-                <a href="assets/DARE_Olatunji_CV_ATS.txt" download class="btn-download-cv" title="ATS-friendly plain text CV">
+                <a href="cv-ats.html" target="_blank" class="btn-download-cv" title="ATS-friendly CV — save as PDF from browser">
                   <i class="bi bi-file-earmark-text me-2"></i>ATS CV
                 </a>
               </div>
@@ -1020,24 +1020,11 @@
 
       // Curated selection: best repos — private ones shown as locked cards
       const CURATED_REPOS = [
-        { name: 'ESG-Assistant', desc: 'AI-powered ESG research assistant for sustainability analysis — carbon footprinting, environmental metrics, and automated reporting.', lang: 'Python', updated: 'Dec 2025', url: '#', isPrivate: true },
-        { name: 'AttritionPrediction', desc: 'Predictive classification model identifying key factors driving employee turnover and retention risks.', lang: 'R', updated: 'Mar 2026', url: 'https://ambolatunji.shinyapps.io/AttritionPrediction/', isPrivate: false },
         { name: 'Guiness-MCP', desc: 'MCP Server powering semantic BI models for Guinness Nigeria — NLP-driven querying of business data.', lang: 'Python', updated: 'Mar 2026', url: '#', isPrivate: true },
+        { name: 'AttritionPrediction', desc: 'Predictive classification model identifying key factors driving employee turnover and retention risks.', lang: 'R', updated: 'Mar 2026', url: 'https://ambolatunji.shinyapps.io/AttritionPrediction/', isPrivate: false },
         { name: 'InsigniaDowntime', desc: 'IoT microcontroller system for real-time downtime tracking at industrial facilities.', lang: 'Python', updated: 'Feb 2026', url: '#', isPrivate: true },
-        { name: 'ESG-Assistant', desc: 'AI-powered ESG (Environmental, Social, Governance) research assistant using sustainability datasets.', lang: 'Python', updated: 'Dec 2025', url: '#', isPrivate: true },
-        { name: 'Med_diagnosis', desc: 'Medical diagnosis assistant leveraging ChatGPT for symptom-based disease consultation.', lang: 'Python', updated: 'Nov 2025', url: '#', isPrivate: true },
-        { name: 'KCG', desc: 'EKEDC KCG feeder validation system — automated data quality checks on 800K+ meter records.', lang: 'Jupyter', updated: 'Oct 2025', url: '#', isPrivate: true },
+        { name: 'ESG-Assistant', desc: 'AI-powered ESG research assistant for sustainability analysis — carbon footprinting, environmental metrics, and automated reporting.', lang: 'Python', updated: 'Dec 2025', url: '#', isPrivate: true },
         { name: 'food_concepts_training_app', desc: 'Streamlit training & data management app built for Food Concepts PLC administrative efficiency.', lang: 'Python', updated: 'Nov 2025', url: 'https://github.com/ambolatunji/food_concepts_training_app', isPrivate: false },
-        { name: 'yolov8-streamlit-detection-tracking', desc: 'YOLOv8 object detection and tracking with real-time Streamlit web interface for video/image analysis.', lang: 'Python', updated: 'May 2025', url: 'https://github.com/ambolatunji/yolov8-streamlit-detection-tracking', isPrivate: false },
-        { name: 'Corn-Leaf-Diseases-Detection', desc: 'Corn leaf disease detection app using TensorFlow, Keras CNNs and Streamlit for agricultural ML.', lang: 'Python', updated: 'Apr 2025', url: 'https://github.com/ambolatunji/Corn-Leaf-Diseases-Detection', isPrivate: false },
-        { name: 'Real_Estate_Market_Automation', desc: 'Automated web scraping pipeline for real estate market data collection and analysis.', lang: 'Python', updated: 'Feb 2025', url: 'https://github.com/ambolatunji/Real_Estate_Market_Data_Entry_Automation', isPrivate: false },
-        { name: 'EKEDC-DS', desc: 'Data Science toolkit from my 5 years at Eko Electricity Distribution — ML, SQL, Power BI pipelines.', lang: 'Python', updated: 'Aug 2025', url: 'https://github.com/ambolatunji/EKEDC-DS', isPrivate: false },
-        { name: 'senti-analyzer', desc: 'Sentiment analysis web app using VADER and Transformer models for social media text classification.', lang: 'Python', updated: 'Jan 2025', url: 'https://github.com/ambolatunji/senti-analyzer', isPrivate: false },
-        { name: 'user_video_desc', desc: 'Analyses social media videos to describe user personality traits using AI-powered video understanding.', lang: 'Python', updated: 'Oct 2024', url: 'https://github.com/ambolatunji/user_video_desc', isPrivate: false },
-        { name: 'smartfactoriesim', desc: 'Smart factory IoT simulation — models machine connectivity, sensor telemetry, and failure prediction.', lang: 'Jupyter', updated: 'Jul 2025', url: 'https://github.com/ambolatunji/smartfactoriesim', isPrivate: false },
-        { name: 'EPP', desc: 'Employee prediction system — ML classification for workforce analytics and HR decision support.', lang: 'Jupyter', updated: 'Jun 2024', url: 'https://github.com/ambolatunji/EPP', isPrivate: false },
-        { name: 'movie_recomm', desc: 'Collaborative filtering movie recommender system deployed as a live Streamlit app.', lang: 'Python', updated: 'Apr 2025', url: 'https://github.com/ambolatunji/movie_recomm', isPrivate: false },
-        { name: 'Diabetes_Predictions', desc: 'Early-stage diabetes prediction ML model using Pima Indians dataset — scikit-learn classification.', lang: 'Jupyter', updated: 'Jun 2024', url: 'https://github.com/ambolatunji/Diabetes_Predictions', isPrivate: false },
       ];
 
       function langColor(lang) { return LANG_COLORS[lang] || '#8b949e'; }
